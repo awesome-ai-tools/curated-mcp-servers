@@ -62,9 +62,9 @@ A community-curated list of **Model Context Protocol (MCP) servers** — the ope
       </a>
     </td>
     <td>
-      <a href="https://github.com/nicejam/ssemble-mcp"><b>Ssemble AI Clipping</b></a><br>
+      <a href="https://www.npmjs.com/package/@ssemble/mcp-server"><b>Ssemble AI Clipping</b></a><br>
       Create AI-powered short-form video clips from YouTube videos. 9 tools for creating shorts, browsing caption templates, background music, gameplay overlays, and meme hooks. Supports both local (npx) and hosted endpoint (mcp.ssemble.com).<br>
-      <a href="https://www.ssemble.com">Website</a> · <a href="https://github.com/nicejam/ssemble-mcp">GitHub</a>
+      <a href="https://www.ssemble.com">Website</a> · <a href="https://www.npmjs.com/package/@ssemble/mcp-server">GitHub</a>
     </td>
   </tr>
 </table>
@@ -73,7 +73,7 @@ A community-curated list of **Model Context Protocol (MCP) servers** — the ope
 
 > Last updated: March 2026
 
-- **[Ssemble AI Clipping](https://github.com/nicejam/ssemble-mcp)** - Create AI-powered short-form video clips from YouTube videos
+- **[Ssemble AI Clipping](https://www.npmjs.com/package/@ssemble/mcp-server)** - Create AI-powered short-form video clips from YouTube videos
 - **[GitHub](https://github.com/github/github-mcp-server)** - GitHub's official MCP Server
 - **[Playwright](https://github.com/microsoft/playwright-mcp)** - Playwright MCP server
 - **[Google Cloud Run](https://github.com/GoogleCloudPlatform/cloud-run-mcp)** - Official MCP Server to deploy to Google Cloud Run
@@ -231,7 +231,7 @@ Official integrations are maintained by companies building production ready MCP 
 - **[Mureka](https://github.com/SkyworkAI/Mureka-mcp)** - generate lyrics, song and background music(instrumental)
 - **[Mux](https://github.com/muxinc/mux-node-sdk/tree/master/packages/mcp-server)** - [Mux](https://www.mux.com) is a video API for developers. With Mux's official MCP you can upload videos, create live streams, generate thumbnails, add captions, manage playback policies, dig through engagement data, monitor video performance, and more.
 - **[SlideSpeak](https://github.com/SlideSpeak/slidespeak-mcp)** - Create presentations and PowerPoints using AI and SlideSpeak MCP
-- **[Ssemble AI Clipping](https://github.com/nicejam/ssemble-mcp)** - Create AI-powered short-form video clips from YouTube videos. 9 tools for creating shorts, browsing caption templates, background music, gameplay overlays, and meme hooks. Supports both local (npx) and hosted endpoint (mcp.ssemble.com). [Website](https://www.ssemble.com)
+- **[Ssemble AI Clipping](https://www.npmjs.com/package/@ssemble/mcp-server)** - Create AI-powered short-form video clips from YouTube videos. 9 tools for creating shorts, browsing caption templates, background music, gameplay overlays, and meme hooks. Supports both local (npx) and hosted endpoint (mcp.ssemble.com). [Website](https://www.ssemble.com)
 - **[Supadata](https://github.com/supadata-ai/mcp)** - Official MCP server for [Supadata](https://supadata.ai) - YouTube, TikTok, X and Web data for makers.
 - **[VideoDB](https://github.com/video-db/agent-toolkit/tree/main/modelcontextprotocol)** - Server for advanced AI-driven video editing, semantic search, multilingual transcription, generative media, voice cloning, and content moderation.
 - **[Webflow](https://github.com/webflow/mcp-server)** - Interact with Webflow APIs to list and edit your site and CMS data.
