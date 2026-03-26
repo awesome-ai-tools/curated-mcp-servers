@@ -1,0 +1,35 @@
+# Localhost and loopback URLs
+http://localhost
+http://localhost:*
+https://localhost
+https://localhost:*
+http://127.0.0.1
+http://127.0.0.1:*
+https://127.0.0.1
+https://127.0.0.1:*
+http://0.0.0.0
+http://0.0.0.0:*
+
+# Example and placeholder URLs
+http://example.com
+https://example.com
+http://example.org
+https://example.org
+
+# URLs that commonly return false positives due to bot protection
+https://www.linkedin.com/.*
+https://twitter.com/.*
+https://x.com/.*
+https://t.co/.*
+
+# Sites that block automated requests or require authentication
+https://discord.com/.*
+https://discord.gg/.*
+https://medium.com/.*
+
+# npm package pages (often rate-limited)
+https://www.npmjs.com/package/.*
+https://npmjs.com/package/.*
+
+# MCP endpoint URLs (not meant to be visited in a browser)
+https://mcp\..*

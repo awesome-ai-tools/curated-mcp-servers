@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curated MCP Servers - Community-curated Model Context Protocol servers</title>
+  <meta name="description" content="A community-curated list of Model Context Protocol (MCP) servers for connecting AI assistants to external tools, data sources, and APIs.">
+  <meta name="theme-color" content="#0d1117">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>%E2%9A%A1</text></svg>">
+  <style>
+    /* ========== Reset & Base ========== */
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg-primary: #0d1117;
+      --bg-secondary: #161b22;
+      --bg-tertiary: #1c2129;
+      --border-color: #30363d;
+      --border-hover: #484f58;
+      --text-primary: #e6edf3;
+      --text-secondary: #8b949e;
+      --text-muted: #6e7681;
+      --accent: #58a6ff;
+      --accent-hover: #79c0ff;
+      --featured: #f78166;
+      --featured-glow: rgba(247, 129, 102, 0.15);
+      --green: #3fb950;
+      --purple: #bc8cff;
+      --yellow: #d29922;
+      --card-radius: 12px;
+      --transition: 0.2s ease;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: color var(--transition);
+    }
+
+    a:hover {
+      color: var(--accent-hover);
+    }
+
+    /* ========== Layout ========== */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ========== Header ========== */
+    .header {
+      padding: 48px 0 32px;
+      text-align: center;
+      position: relative;
+    }
+
+    .header::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 600px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 12px;
+    }
+
+    .header .subtitle {
+      font-size: 1.125rem;
+      color: var(--text-secondary);
+      max-width: 600px;
+      margin: 0 auto 8px;
+    }
+
+    .header .badge-row {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      margin-top: 16px;
+      flex-wrap: wrap;
+    }
+
+    .header .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      color: var(--text-secondary);
+    }
+
+    .header .badge svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    /* ========== Search ========== */
+    .search-section {
+      padding: 32px 0 16px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg-primary);
+    }
+
+    .search-wrapper {
+      position: relative;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      width: 18px;
+      height: 18px;
+      pointer-events: none;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 14px 16px 14px 48px;
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      background: var(--bg-secondary);
+      color: var(--text-primary);
+      font-size: 1rem;
+      outline: none;
+      transition: border-color var(--transition), box-shadow var(--transition);
+    }
+
+    .search-input::placeholder {
+      color: var(--text-muted);
+    }
+
+    .search-input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.15);
+    }
+
+    .search-count {
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 10px;
+      min-height: 20px;
+    }
+
+    /* ========== Category Filters ========== */
+    .filters {
+      padding: 12px 0 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .filter-btn {
+      padding: 6px 16px;
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      background: transparent;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all var(--transition);
+      white-space: nowrap;
+    }
+
+    .filter-btn:hover {
+      border-color: var(--border-hover);
+      color: var(--text-primary);
+      background: var(--bg-tertiary);
+    }
+
+    .filter-btn.active {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: rgba(88, 166, 255, 0.1);
+    }
+
+    /* ========== Featured Section ========== */
+    .featured-section {
+      margin-bottom: 40px;
+    }
+
+    .section-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-title .icon {
+      font-size: 1.1rem;
+    }
+
+    .featured-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--featured);
+      border-radius: var(--card-radius);
+      padding: 28px;
+      position: relative;
+      overflow: hidden;
+      transition: transform var(--transition), box-shadow var(--transition);
+      box-shadow: 0 0 30px var(--featured-glow);
+    }
+
+    .featured-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--featured), #ffa657, var(--featured));
+    }
+
+    .featured-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 40px rgba(247, 129, 102, 0.25);
+    }
+
+    .featured-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 3px 10px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      background: rgba(247, 129, 102, 0.15);
+      color: var(--featured);
+      margin-bottom: 12px;
+    }
+
+    .featured-card h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .featured-card h3 a {
+      color: var(--text-primary);
+    }
+
+    .featured-card h3 a:hover {
+      color: var(--featured);
+    }
+
+    .featured-card .description {
+      color: var(--text-secondary);
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+
+    .featured-links {
+      display: flex;
+      gap: 12px;
+    }
+
+    .featured-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: all var(--transition);
+    }
+
+    .featured-link.primary {
+      background: var(--featured);
+      color: #fff;
+    }
+
+    .featured-link.primary:hover {
+      background: #ffa657;
+      color: #fff;
+    }
+
+    .featured-link.secondary {
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border-color);
+      color: var(--text-secondary);
+    }
+
+    .featured-link.secondary:hover {
+      border-color: var(--border-hover);
+      color: var(--text-primary);
+    }
+
+    .featured-link svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    /* ========== Server Grid ========== */
+    .servers-section {
+      padding-bottom: 48px;
+    }
+
+    .server-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 16px;
+    }
+
+    .server-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--card-radius);
+      padding: 20px;
+      transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .server-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--border-hover);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .server-card .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 10px;
+      gap: 12px;
+    }
+
+    .server-card h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+
+    .server-card h3 a {
+      color: var(--text-primary);
+    }
+
+    .server-card h3 a:hover {
+      color: var(--accent);
+    }
+
+    .category-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .category-badge[data-category="Official"] {
+      background: rgba(88, 166, 255, 0.12);
+      color: var(--accent);
+    }
+    .category-badge[data-category="Database"] {
+      background: rgba(63, 185, 80, 0.12);
+      color: var(--green);
+    }
+    .category-badge[data-category="AI/ML"] {
+      background: rgba(188, 140, 255, 0.12);
+      color: var(--purple);
+    }
+    .category-badge[data-category="Developer Tools"] {
+      background: rgba(210, 153, 34, 0.12);
+      color: var(--yellow);
+    }
+    .category-badge[data-category="Cloud"] {
+      background: rgba(88, 166, 255, 0.12);
+      color: #58a6ff;
+    }
+    .category-badge[data-category="Social Media"] {
+      background: rgba(247, 129, 102, 0.12);
+      color: var(--featured);
+    }
+    .category-badge[data-category="Content & Media"] {
+      background: rgba(255, 123, 184, 0.12);
+      color: #ff7bb8;
+    }
+    .category-badge[data-category="Finance"] {
+      background: rgba(63, 185, 80, 0.12);
+      color: var(--green);
+    }
+    .category-badge[data-category="Productivity"] {
+      background: rgba(210, 153, 34, 0.12);
+      color: var(--yellow);
+    }
+    .category-badge[data-category="Search & Web"] {
+      background: rgba(188, 140, 255, 0.12);
+      color: var(--purple);
+    }
+    .category-badge[data-category="Security"] {
+      background: rgba(248, 81, 73, 0.12);
+      color: #f85149;
+    }
+    .category-badge[data-category="Analytics"] {
+      background: rgba(121, 192, 255, 0.12);
+      color: #79c0ff;
+    }
+    .category-badge[data-category="Other"] {
+      background: rgba(139, 148, 158, 0.12);
+      color: var(--text-secondary);
+    }
+
+    .server-card .description {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      line-height: 1.6;
+      flex: 1;
+    }
+
+    .server-card .card-footer {
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .server-card .card-footer a {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .server-card .card-footer a:hover {
+      color: var(--accent);
+    }
+
+    .server-card .card-footer svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    .official-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      font-size: 0.7rem;
+      color: var(--green);
+      margin-left: auto;
+    }
+
+    .official-tag svg {
+      width: 12px;
+      height: 12px;
+    }
+
+    /* ========== Empty State ========== */
+    .empty-state {
+      text-align: center;
+      padding: 80px 20px;
+      color: var(--text-muted);
+      grid-column: 1 / -1;
+    }
+
+    .empty-state svg {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 16px;
+      opacity: 0.4;
+    }
+
+    .empty-state h3 {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      margin-bottom: 8px;
+    }
+
+    .empty-state p {
+      font-size: 0.9rem;
+    }
+
+    /* ========== Footer ========== */
+    .footer {
+      border-top: 1px solid var(--border-color);
+      padding: 32px 0;
+      text-align: center;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      transition: color var(--transition);
+    }
+
+    .footer-links a:hover {
+      color: var(--accent);
+    }
+
+    .footer-links a svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .footer-credit {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* ========== Responsive ========== */
+    @media (max-width: 768px) {
+      .header {
+        padding: 32px 0 24px;
+      }
+
+      .header h1 {
+        font-size: 1.75rem;
+      }
+
+      .header .subtitle {
+        font-size: 1rem;
+      }
+
+      .server-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .featured-card {
+        padding: 20px;
+      }
+
+      .featured-card h3 {
+        font-size: 1.25rem;
+      }
+
+      .filters {
+        gap: 6px;
+      }
+
+      .filter-btn {
+        padding: 5px 12px;
+        font-size: 0.8rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 16px;
+      }
+
+      .search-section {
+        padding: 24px 0 12px;
+      }
+
+      .featured-links {
+        flex-direction: column;
+      }
+
+      .featured-link {
+        justify-content: center;
+      }
+    }
+
+    /* ========== Animations ========== */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .server-card {
+      animation: fadeIn 0.3s ease forwards;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1>Curated MCP Servers</h1>
+      <p class="subtitle">A community-curated list of Model Context Protocol servers for connecting AI assistants to external tools, data sources, and APIs.</p>
+      <div class="badge-row">
+        <span class="badge">
+          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25z"/></svg>
+          Open Source
+        </span>
+        <span class="badge">
+          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"/></svg>
+          PRs Welcome
+        </span>
+        <span class="badge">
+          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"/></svg>
+          MIT License
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Search -->
+  <div class="search-section">
+    <div class="container">
+      <div class="search-wrapper">
+        <svg class="search-icon" viewBox="0 0 16 16" fill="currentColor"><path d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z"/></svg>
+        <input type="text" class="search-input" id="searchInput" placeholder="Search MCP servers..." autocomplete="off" spellcheck="false">
+      </div>
+      <div class="search-count" id="searchCount"></div>
+    </div>
+  </div>
+
+  <!-- Category Filters -->
+  <div class="container">
+    <div class="filters" id="filters">
+      <button class="filter-btn active" data-category="All">All</button>
+      <button class="filter-btn" data-category="Official">Official</button>
+      <button class="filter-btn" data-category="Database">Database</button>
+      <button class="filter-btn" data-category="AI/ML">AI/ML</button>
+      <button class="filter-btn" data-category="Developer Tools">Developer Tools</button>
+      <button class="filter-btn" data-category="Cloud">Cloud</button>
+      <button class="filter-btn" data-category="Social Media">Social Media</button>
+      <button class="filter-btn" data-category="Content & Media">Content & Media</button>
+      <button class="filter-btn" data-category="Finance">Finance</button>
+      <button class="filter-btn" data-category="Productivity">Productivity</button>
+      <button class="filter-btn" data-category="Search & Web">Search & Web</button>
+      <button class="filter-btn" data-category="Security">Security</button>
+      <button class="filter-btn" data-category="Analytics">Analytics</button>
+      <button class="filter-btn" data-category="Other">Other</button>
+    </div>
+  </div>
+
+  <main class="container">
+
+    <!-- Featured Section -->
+    <section class="featured-section" id="featuredSection">
+      <div class="section-title"><span class="icon">&#9733;</span> Featured</div>
+      <div class="featured-card">
+        <span class="featured-badge">&#9733; Featured</span>
+        <h3><a href="https://github.com/nicejam/ssemble-mcp" target="_blank" rel="noopener">Ssemble AI Clipping</a></h3>
+        <p class="description">Create AI-powered short-form video clips from YouTube videos. 9 tools for creating shorts, browsing caption templates, background music, gameplay overlays, and meme hooks. Supports both local (npx) and hosted endpoint (mcp.ssemble.com).</p>
+        <div class="featured-links">
+          <a href="https://github.com/nicejam/ssemble-mcp" target="_blank" rel="noopener" class="featured-link primary">
+            <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg>
+            View on GitHub
+          </a>
+          <a href="https://www.ssemble.com" target="_blank" rel="noopener" class="featured-link secondary">
+            <svg viewBox="0 0 16 16" fill="currentColor"><path d="M4.53 4.75A.75.75 0 0 1 5.28 4h6.01a.75.75 0 0 1 .75.75v6.01a.75.75 0 0 1-1.5 0v-4.2l-5.26 5.261a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734l5.26-5.26H5.28a.75.75 0 0 1-.75-.75Z"/></svg>
+            Visit Website
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Server Grid -->
+    <section class="servers-section">
+      <div class="section-title"><span class="icon">&#9889;</span> All Servers</div>
+      <div class="server-grid" id="serverGrid"></div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="https://github.com/awesome-ai-tools/curated-mcp-servers" target="_blank" rel="noopener">
+          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg>
+          GitHub Repository
+        </a>
+        <a href="https://github.com/awesome-ai-tools/curated-mcp-servers/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">
+          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z"/></svg>
+          Add Your Server
+        </a>
+        <a href="https://modelcontextprotocol.io" target="_blank" rel="noopener">
+          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M4.53 4.75A.75.75 0 0 1 5.28 4h6.01a.75.75 0 0 1 .75.75v6.01a.75.75 0 0 1-1.5 0v-4.2l-5.26 5.261a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734l5.26-5.26H5.28a.75.75 0 0 1-.75-.75Z"/></svg>
+          MCP Specification
+        </a>
+      </div>
+      <p class="footer-credit">Curated MCP Servers &mdash; Originally based on <a href="https://github.com/wong2/awesome-mcp-servers">awesome-mcp-servers</a> by wong2 (MIT License)</p>
+    </div>
+  </footer>
+
+  <script>
+    // ========== Server Data ==========
+    const servers = [
+      // --- Official ---
+      {
+        name: "GitHub",
+        url: "https://github.com/github/github-mcp-server",
+        description: "GitHub's official MCP Server for repository management, issues, pull requests, and more.",
+        category: "Official",
+        official: true
+      },
+      {
+        name: "Stripe",
+        url: "https://github.com/stripe/agent-toolkit",
+        description: "Interact with Stripe API for payments, subscriptions, invoices, and financial operations.",
+        category: "Official",
+        official: true
+      },
+      {
+        name: "Supabase",
+        url: "https://github.com/supabase-community/supabase-mcp",
+        description: "Connect to the Supabase platform for database, auth, edge functions, storage, and more.",
+        category: "Official",
+        official: true
+      },
+      {
+        name: "Cloudflare",
+        url: "https://github.com/cloudflare/mcp-server-cloudflare",
+        description: "Deploy, configure, and interrogate your resources on the Cloudflare developer platform (Workers, KV, R2, D1).",
+        category: "Official",
+        official: true
+      },
+      {
+        name: "Notion",
+        url: "https://github.com/makenotion/notion-mcp-server",
+        description: "Notion's official MCP server for managing pages, databases, and workspace content.",
+        category: "Official",
+        official: true
+      },
+      {
+        name: "Playwright",
+        url: "https://github.com/microsoft/playwright-mcp",
+        description: "Microsoft's official Playwright MCP server for browser automation, testing, and web scraping.",
+        category: "Official",
+        official: true
+      },
+      {
+        name: "Sentry",
+        url: "https://github.com/getsentry/sentry-mcp",
+        description: "Official MCP server for Sentry application monitoring, error tracking, and performance insights.",
+        category: "Official",
+        official: true
+      },
+      {
+        name: "Grafana",
+        url: "https://github.com/grafana/mcp-grafana",
+        description: "Search dashboards, investigate incidents, and query datasources in your Grafana instance.",
+        category: "Official",
+        official: true
+      },
+
+      // --- Database ---
+      {
+        name: "MongoDB",
+        url: "https://github.com/kiliczsh/mcp-mongo-server",
+        description: "A Model Context Protocol server for MongoDB, enabling LLMs to interact directly with databases.",
+        category: "Database"
+      },
+      {
+        name: "Neo4j",
+        url: "https://github.com/neo4j-contrib/mcp-neo4j/",
+        description: "Neo4j graph database server with schema inspection, read/write Cypher queries, and graph-backed memory.",
+        category: "Database"
+      },
+      {
+        name: "ClickHouse",
+        url: "https://github.com/ClickHouse/mcp-clickhouse",
+        description: "Query your ClickHouse database server for real-time analytics and data exploration.",
+        category: "Database"
+      },
+      {
+        name: "Neon Postgres",
+        url: "https://github.com/neondatabase/mcp-server-neon",
+        description: "Interact with the Neon serverless Postgres platform for modern database operations.",
+        category: "Database"
+      },
+      {
+        name: "Prisma Postgres",
+        url: "https://github.com/prisma/mcp",
+        description: "Spin up new databases, run migrations, and execute queries with Prisma Postgres.",
+        category: "Database"
+      },
+
+      // --- AI/ML ---
+      {
+        name: "ElevenLabs",
+        url: "https://github.com/elevenlabs/elevenlabs-mcp",
+        description: "The official ElevenLabs MCP server for text-to-speech, voice cloning, and audio generation.",
+        category: "AI/ML"
+      },
+      {
+        name: "Perplexity",
+        url: "https://github.com/ppl-ai/modelcontextprotocol",
+        description: "Connect to Perplexity's Sonar API for real-time web-wide research in conversational AI.",
+        category: "AI/ML"
+      },
+      {
+        name: "OpenAI",
+        url: "https://github.com/pierrebrunelle/mcp-server-openai",
+        description: "Query OpenAI models directly from Claude or other MCP clients using the MCP protocol.",
+        category: "AI/ML"
+      },
+      {
+        name: "Chroma",
+        url: "https://github.com/chroma-core/chroma-mcp",
+        description: "Embeddings, vector search, document storage, and full-text search with the open-source AI application database.",
+        category: "AI/ML"
+      },
+
+      // --- Developer Tools ---
+      {
+        name: "Docker",
+        url: "https://github.com/QuantGeekDev/docker-mcp",
+        description: "Run and manage Docker containers, Docker Compose, and view logs programmatically.",
+        category: "Developer Tools"
+      },
+      {
+        name: "Kubernetes",
+        url: "https://github.com/Flux159/mcp-server-kubernetes",
+        description: "Connect to Kubernetes clusters and manage pods, deployments, services, and namespaces.",
+        category: "Developer Tools"
+      },
+      {
+        name: "Linear",
+        url: "https://github.com/tacticlaunch/mcp-linear",
+        description: "Integrate with Linear project management for issues, projects, cycles, and team workflows.",
+        category: "Developer Tools"
+      },
+      {
+        name: "JetBrains",
+        url: "https://github.com/JetBrains/mcp-jetbrains",
+        description: "Work on your code directly with JetBrains IDEs through AI-powered assistance.",
+        category: "Developer Tools"
+      },
+      {
+        name: "Postman",
+        url: "https://github.com/postmanlabs/postman-mcp-server",
+        description: "Connect AI agents, assistants, and chatbots directly to your APIs on Postman.",
+        category: "Developer Tools"
+      },
+
+      // --- Cloud ---
+      {
+        name: "AWS CDK",
+        url: "https://github.com/awslabs/mcp/tree/main/src/cdk-mcp-server",
+        description: "Get prescriptive CDK advice, explain CDK Nag rules, generate Bedrock Agent schemas, and discover AWS Solutions Constructs patterns.",
+        category: "Cloud"
+      },
+      {
+        name: "Google Cloud Run",
+        url: "https://github.com/GoogleCloudPlatform/cloud-run-mcp",
+        description: "Official MCP server to deploy and manage applications on Google Cloud Run.",
+        category: "Cloud"
+      },
+      {
+        name: "Azure DevOps",
+        url: "https://github.com/microsoft/azure-devops-mcp",
+        description: "The MCP server for Azure DevOps, bringing the power of Azure DevOps directly to your agents.",
+        category: "Cloud"
+      },
+
+      // --- Social Media ---
+      {
+        name: "Slack",
+        url: "https://github.com/korotovsky/slack-mcp-server",
+        description: "The most powerful MCP server for Slack Workspaces, supporting both Stdio and SSE transports.",
+        category: "Social Media"
+      },
+      {
+        name: "Twilio",
+        url: "https://github.com/twilio-labs/mcp",
+        description: "Interact with Twilio APIs to send messages, manage phone numbers, configure your account, and more.",
+        category: "Social Media"
+      },
+      {
+        name: "LINE Official Account",
+        url: "https://github.com/line/line-bot-mcp-server",
+        description: "Integrate the LINE Messaging API to connect an AI Agent to the LINE Official Account platform.",
+        category: "Social Media"
+      },
+      {
+        name: "Bluesky",
+        url: "https://github.com/keturiosakys/bluesky-context-server",
+        description: "Integrate with the Bluesky API to query and search feeds and posts.",
+        category: "Social Media"
+      },
+
+      // --- Content & Media ---
+      {
+        name: "Ssemble AI Clipping",
+        url: "https://github.com/nicejam/ssemble-mcp",
+        description: "Create AI-powered short-form video clips from YouTube videos with 9 tools for shorts creation.",
+        category: "Content & Media"
+      },
+      {
+        name: "YouTube",
+        url: "https://github.com/anaisbetts/mcp-youtube",
+        description: "Fetch YouTube subtitles and video data for content analysis and processing.",
+        category: "Content & Media"
+      },
+      {
+        name: "VideoDB",
+        url: "https://github.com/video-db/agent-toolkit/tree/main/modelcontextprotocol",
+        description: "Advanced AI-driven video editing, semantic search, multilingual transcription, and content moderation.",
+        category: "Content & Media"
+      },
+      {
+        name: "Mux",
+        url: "https://github.com/muxinc/mux-node-sdk/tree/master/packages/mcp-server",
+        description: "Upload videos, create live streams, generate thumbnails, manage playback, and monitor video performance.",
+        category: "Content & Media"
+      },
+
+      // --- Finance ---
+      {
+        name: "PayPal",
+        url: "https://github.com/paypal/agent-toolkit",
+        description: "Integrate with PayPal APIs for payments, invoices, subscriptions, and financial operations.",
+        category: "Finance"
+      },
+      {
+        name: "CoinGecko",
+        url: "https://docs.coingecko.com/reference/mcp-server/",
+        description: "Official CoinGecko API MCP Server for crypto price and market data across 200+ blockchain networks.",
+        category: "Finance"
+      },
+      {
+        name: "Financial Datasets",
+        url: "https://github.com/financial-datasets/mcp-server",
+        description: "Stock market API made for AI agents, providing real-time and historical financial data.",
+        category: "Finance"
+      },
+
+      // --- Search & Web ---
+      {
+        name: "Exa",
+        url: "https://github.com/exa-labs/exa-mcp-server",
+        description: "Search engine made for AIs by Exa, providing high-quality web search results.",
+        category: "Search & Web"
+      },
+      {
+        name: "Tavily",
+        url: "https://github.com/tavily-ai/tavily-mcp",
+        description: "Search engine for AI agents with search and extract capabilities powered by Tavily.",
+        category: "Search & Web"
+      },
+      {
+        name: "Bright Data",
+        url: "https://github.com/brightdata/brightdata-mcp",
+        description: "Discover, extract, and interact with the web through one interface powering automated access across the public internet.",
+        category: "Search & Web"
+      },
+      {
+        name: "Firecrawl",
+        url: "https://github.com/mendableai/firecrawl-mcp-server",
+        description: "Extract web data with Firecrawl for structured scraping, crawling, and content extraction.",
+        category: "Search & Web"
+      },
+      {
+        name: "Kagi Search",
+        url: "https://github.com/kagisearch/kagimcp",
+        description: "Search the web using Kagi's premium search API for high-quality, ad-free results.",
+        category: "Search & Web"
+      },
+
+      // --- Productivity ---
+      {
+        name: "Zapier",
+        url: "https://zapier.com/mcp",
+        description: "Connect your AI Agents to 8,000+ apps instantly with Zapier's automation platform.",
+        category: "Productivity"
+      },
+      {
+        name: "Home Assistant",
+        url: "https://github.com/voska/hass-mcp",
+        description: "Control smart home devices, query states, manage automations, and troubleshoot your smart home setup.",
+        category: "Productivity"
+      },
+      {
+        name: "Obsidian",
+        url: "https://github.com/MarkusPfundstein/mcp-obsidian",
+        description: "Interact with your Obsidian knowledge base via REST API for note management and search.",
+        category: "Productivity"
+      },
+
+      // --- Security ---
+      {
+        name: "Semgrep",
+        url: "https://github.com/semgrep/mcp",
+        description: "Enable AI agents to secure code with Semgrep static analysis for finding bugs and vulnerabilities.",
+        category: "Security"
+      },
+      {
+        name: "SonarQube",
+        url: "https://github.com/SonarSource/sonarqube-mcp-server",
+        description: "Integration with SonarQube Server or Cloud for code quality analysis and security scanning.",
+        category: "Security"
+      },
+
+      // --- Analytics ---
+      {
+        name: "Axiom",
+        url: "https://github.com/axiomhq/mcp-server-axiom",
+        description: "Query and analyze your Axiom logs, traces, and all other event data in natural language.",
+        category: "Analytics"
+      },
+      {
+        name: "Logfire",
+        url: "https://github.com/pydantic/logfire-mcp",
+        description: "Access OpenTelemetry traces and metrics through Logfire for observability and debugging.",
+        category: "Analytics"
+      },
+
+      // --- Other ---
+      {
+        name: "E2B",
+        url: "https://github.com/e2b-dev/mcp-server",
+        description: "Run code in secure cloud sandboxes hosted by E2B for safe code execution.",
+        category: "Other"
+      },
+      {
+        name: "Apify",
+        url: "https://github.com/apify/actors-mcp-server",
+        description: "Use 3,000+ pre-built cloud tools to extract data from websites, e-commerce, social media, and more.",
+        category: "Other"
+      }
+    ];
+
+    // ========== App Logic ==========
+    let activeCategory = 'All';
+    let searchTerm = '';
+
+    const searchInput = document.getElementById('searchInput');
+    const searchCount = document.getElementById('searchCount');
+    const serverGrid = document.getElementById('serverGrid');
+    const filtersContainer = document.getElementById('filters');
+    const featuredSection = document.getElementById('featuredSection');
+
+    function createServerCard(server) {
+      const card = document.createElement('div');
+      card.className = 'server-card';
+
+      const officialTag = server.official
+        ? `<span class="official-tag"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"/></svg> Official</span>`
+        : '';
+
+      card.innerHTML = `
+        <div class="card-header">
+          <h3><a href="${server.url}" target="_blank" rel="noopener">${server.name}</a></h3>
+          <span class="category-badge" data-category="${server.category}">${server.category}</span>
+        </div>
+        <p class="description">${server.description}</p>
+        <div class="card-footer">
+          <a href="${server.url}" target="_blank" rel="noopener">
+            <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg>
+            Repository
+          </a>
+          ${officialTag}
+        </div>
+      `;
+      return card;
+    }
+
+    function renderServers() {
+      const lowerSearch = searchTerm.toLowerCase();
+
+      const filtered = servers.filter(server => {
+        const matchesCategory = activeCategory === 'All' || server.category === activeCategory;
+        const matchesSearch = !searchTerm ||
+          server.name.toLowerCase().includes(lowerSearch) ||
+          server.description.toLowerCase().includes(lowerSearch) ||
+          server.category.toLowerCase().includes(lowerSearch);
+        return matchesCategory && matchesSearch;
+      });
+
+      // Show/hide featured section
+      if (searchTerm || activeCategory !== 'All') {
+        const featuredMatches = !searchTerm ||
+          'ssemble ai clipping'.includes(lowerSearch) ||
+          'video clips youtube shorts'.includes(lowerSearch);
+        const categoryMatches = activeCategory === 'All' || activeCategory === 'Content & Media';
+        featuredSection.style.display = (featuredMatches && categoryMatches) ? '' : 'none';
+      } else {
+        featuredSection.style.display = '';
+      }
+
+      serverGrid.innerHTML = '';
+
+      if (filtered.length === 0) {
+        serverGrid.innerHTML = `
+          <div class="empty-state">
+            <svg viewBox="0 0 16 16" fill="currentColor"><path d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z"/></svg>
+            <h3>No servers found</h3>
+            <p>Try adjusting your search or category filter.</p>
+          </div>
+        `;
+      } else {
+        filtered.forEach((server, i) => {
+          const card = createServerCard(server);
+          card.style.animationDelay = `${Math.min(i * 0.03, 0.5)}s`;
+          serverGrid.appendChild(card);
+        });
+      }
+
+      // Update count
+      const totalLabel = activeCategory === 'All' ? 'servers' : `${activeCategory} servers`;
+      if (searchTerm) {
+        searchCount.textContent = `${filtered.length} of ${servers.length} servers match your search`;
+      } else if (activeCategory !== 'All') {
+        searchCount.textContent = `${filtered.length} ${totalLabel}`;
+      } else {
+        searchCount.textContent = `${servers.length} servers across ${new Set(servers.map(s => s.category)).size} categories`;
+      }
+    }
+
+    // Search handler
+    searchInput.addEventListener('input', (e) => {
+      searchTerm = e.target.value.trim();
+      renderServers();
+    });
+
+    // Filter handlers
+    filtersContainer.addEventListener('click', (e) => {
+      const btn = e.target.closest('.filter-btn');
+      if (!btn) return;
+
+      filtersContainer.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeCategory = btn.dataset.category;
+      renderServers();
+    });
+
+    // Initial render
+    renderServers();
+  </script>
+
+</body>
+</html>
