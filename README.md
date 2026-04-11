@@ -576,6 +576,7 @@ A growing set of community-developed and maintained servers demonstrates various
 - **[SearXNG](https://github.com/ihor-sokoliuk/mcp-searxng)** - A Model Context Protocol Server for [SearXNG](https://docs.searxng.org)
 - **[Secure Fetch](https://github.com/appsec-innovation-labs/secure-mcp-fetch)** - Secure fetch to prevent access to local resources
 - **[Skyvern](https://github.com/Skyvern-AI/skyvern/tree/main/integrations/mcp)** - MCP Server to let Claude / your AI control the browser
+- **[Toprank](https://github.com/nowork-studio/toprank)** - MCP-powered Claude Code workflow pack for SEO and Google Ads that auto-configures AdsAgent MCP and works with Google Search Console compatible servers for search analytics and site optimization.
 - **[Web Search MCP](https://github.com/mrkrsl/web-search-mcp)** - A server that provides local, full web search, summaries and page extration for use with Local LLMs.
 - **[WebSearch-MCP](https://github.com/mnhlt/WebSearch-MCP)** - Self-hosted Websearch API
 - **[Website Snapshot](https://github.com/gustavo-meilus/mcp-web-snapshot)** - A MCP server that provides comprehensive website snapshot capabilities using Playwright. This server enables LLMs to capture and analyze web pages through structured accessibility snapshots, network monitoring, and console message collection.
