@@ -624,6 +624,7 @@ A growing set of community-developed and maintained servers demonstrates various
 - **[Microsoft Entra ID MCP Server](https://github.com/hieuttmmo/entraid-mcp-server)** - A Python MCP server for Microsoft Entra ID (Azure AD) directory, user, group, device, sign-in, and security operations via Microsoft Graph.
 - **[OSV](https://github.com/StacklokLabs/osv-mcp)** - Access the [OSV (Open Source Vulnerabilities) database](https://osv.dev/) for vulnerability information. Query vulnerabilities by package version or commit, batch query multiple packages, and get detailed vulnerability information by ID.
 - **[Sonatype MCP Server](https://github.com/brianveltman/sonatype-mcp)** - MCP for Sonatype Nexus Repository Manager and Sonatype Repository Firewall. Manage your DevSecOps practices through AI-assisted Workflows.
+- **[EnigmAgent](https://github.com/Agnuxo1/EnigmAgent)** - AES-256-GCM + Argon2id encrypted local vault for AI agent credentials. Resolves `{{PLACEHOLDER}}` secrets at runtime so API keys never appear in prompts, logs, or LLM context.
 
 ### Analytics & Monitoring
 
