@@ -536,6 +536,7 @@ A growing set of community-developed and maintained servers demonstrates various
 - **[OpenMF-mifosx-self-service](https://github.com/openMF/mcp-mifosx-self-service)** - Access Apache Fineract self-service APIs for registration, authentication, account management, and transactions via MCP.
 - **[QuantConnect](https://github.com/QuantConnect/mcp-server)** – Dockerized Python MCP server that lets LLMs like Claude or OpenAI o3 Pro autonomously create projects, backtest strategies, and deploy live-trading workflows via the QuantConnect API.
 - **[Windsor](https://github.com/windsor-ai/windsor_mcp)** - Windsor MCP (Model Context Protocol) enables your LLM to query, explore, and analyze your full-stack business data integrated into Windsor.ai with zero SQL writing or custom scripting.
+- **[TWZRD Agent Intel](https://intel.twzrd.xyz)** - Solana on-chain trust scoring MCP server for AI agents. Verify wallet identity and reputation before x402 micropayments using `score_agent()`, `preflight_check()`, and signed trust receipts. Free streamable-http: `{"mcpServers":{"twzrd-agent-intel":{"url":"https://intel.twzrd.xyz/mcp"}}}`
 
 ### Social Media & Communication
 
