@@ -527,6 +527,7 @@ A growing set of community-developed and maintained servers demonstrates various
 ### Finance & Payments
 
 - **[Algorand](https://github.com/GoPlausible/algorand-mcp)** - A comprehensive MCP server for tooling interactions(40+) and resource accessibility(60+) plus many useful prompts to interact with Algorand Blockchain.
+- **[AgentServices](https://agentservices.to)** - Paid x402 data APIs for AI agents. 37 MCP tools covering crypto market data, onchain analytics, financial feeds, news, and AI inference. Monetized via USDC micropayments on Base.
 - **[CoinCap](https://github.com/QuantGeekDev/coincap-mcp)** - A MCP server that provides real-time cryptocurrency market data through CoinCap's public API without requiring authentication
 - **[Facebook Ads](https://github.com/gomarble-ai/facebook-ads-mcp-server)** - MCP server acting as an interface to the Facebook Ads, enabling programmatic access to Facebook Ads data and management features.
 - **[FrankfurterMCP](https://github.com/anirbanbasu/frankfurtermcp)** - MCP server acting as an interface to the [Frankfurter API](https://frankfurter.dev/) for currency exchange data.
