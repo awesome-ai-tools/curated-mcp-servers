@@ -277,6 +277,7 @@ Official integrations are maintained by companies building production ready MCP 
 - **[Mailtrap](https://github.com/railsware/mailtrap-mcp)** - Integrates with Mailtrap Email API.
 - **[Tldv](https://gitlab.com/tldv/tldv-mcp-server)** - Connect your AI agents to Google-Meet, Zoom & Microsoft Teams through [tl;dv](https://tldv.io)
 - **[Twilio](https://github.com/twilio-labs/mcp)** - Interact with [Twilio](https://www.twilio.com/en-us) APIs to send messages, manage phone numbers, configure your account, and more.
+- **[Xquik](https://github.com/Xquik-dev/x-twitter-scraper)** - Remote X/Twitter MCP server for tweet search, profile lookup, media downloads, monitoring, giveaways, and confirmation-gated publishing workflows.
 
 ### Search & Web
 
@@ -375,7 +376,7 @@ Official integrations are maintained by companies building production ready MCP 
 - **[IP2Location.io](https://github.com/ip2location/mcp-ip2location-io)** - IP2Location.io API integration to retrieve the geolocation information for an IP address.
 - **[IPLocate](https://github.com/iplocate/mcp-server-iplocate)** - Look up IP address geolocation, network information, detect proxies and VPNs, and find abuse contact details using IPLocate.io
 - **[ilert](https://github.com/iLert/mcp-ilert)** - Interact with [ilert](https://ilert.com) through natural language.
-- **[Kiwi.com](<[https://www.kiwi.com](https://mcp-install-instructions.alpic.cloud/servers/kiwi-com-flight-search)>)** - Official [Kiwi.com](https://www.kiwi.com) flight search MCP server. Search and book flights directly from your favorite AI assistant.
+- **[Kiwi.com](https://mcp-install-instructions.alpic.cloud/servers/kiwi-com-flight-search)** - Official [Kiwi.com](https://www.kiwi.com) flight search MCP server. Search and book flights directly from your favorite AI assistant.
 - **[Mapbox](https://github.com/mapbox/mcp-server)** - Unlock geospatial intelligence through Mapbox APIs like geocoding, POI search, directions, isochrones and more.
 - **[OP.GG](https://github.com/opgginc/opgg-mcp)** - Access real-time gaming data across popular titles like League of Legends, TFT, and Valorant, offering champion analytics, esports schedules, meta compositions, and character statistics.
 - **[Octocode](https://github.com/bgauryy/octocode-mcp)** - Leading AI-powered code assistant for advanced research, analysis and discovery across GitHub Repositories in large ecosystems
