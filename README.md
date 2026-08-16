@@ -164,6 +164,7 @@ Official integrations are maintained by companies building production ready MCP 
 
 ### Developer Tools & DevOps
 
+- **[Agent QA](https://github.com/vostride/agent-qa)** - Run natural-language web and mobile regression tests with persistent test memory through CLI and MCP interfaces.
 - **[AgentRPC](https://github.com/agentrpc/agentrpc)** - Connect to any function, any language, across network boundaries using [AgentRPC](https://www.agentrpc.com/).
 - **[AlibabaCloud DevOps MCP](https://github.com/aliyun/alibabacloud-devops-mcp-server)** - Yunxiao MCP Server provides AI assistants with the ability to interact with the [Yunxiao platform](https://devops.aliyun.com).
 - **[APIMatic MCP](https://github.com/apimatic/apimatic-validator-mcp)** - APIMatic MCP Server is used to validate OpenAPI specifications using [APIMatic](https://www.apimatic.io/). The server processes OpenAPI files and returns validation summaries by leveraging APIMatic's API.
