@@ -380,6 +380,7 @@ Official integrations are maintained by companies building production ready MCP 
 - **[OP.GG](https://github.com/opgginc/opgg-mcp)** - Access real-time gaming data across popular titles like League of Legends, TFT, and Valorant, offering champion analytics, esports schedules, meta compositions, and character statistics.
 - **[Octocode](https://github.com/bgauryy/octocode-mcp)** - Leading AI-powered code assistant for advanced research, analysis and discovery across GitHub Repositories in large ecosystems
 - **[OctoEverywhere For 3D Printing](https://octoeverywhere.com/mcp)** - A 3D Printing MCP server that allows for querying for live state, webcam snapshots, and 3D printer control.
+- **[Pocket Drives](https://github.com/RevList/pocket-drives-mcp)** - Search peer-to-peer luxury, exotic, and EV rentals from independent hosts. Booking finishes in the iOS app. [Website](https://pocketdrives.ai)
 - **[ThingsBoard](https://github.com/thingsboard/thingsboard-mcp)** - The ThingsBoard MCP Server provides a natural language interface for LLMs and AI agents to interact with your ThingsBoard IoT platform.
 - **[TrackMage](https://github.com/trackmage/trackmage-mcp-server)** - Shipment tracking api and logistics management capabilities through the [TrackMage API] (https://trackmage.com/)
 - **[Willi MaKo Knowledge Service](https://mcp.stromhaltig.de)** - A knowledge service for Germany's complex Energy Market Communications (MaKo) regulations.
