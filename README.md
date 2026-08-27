@@ -21,6 +21,7 @@ A community-curated list of **Model Context Protocol (MCP) servers** — the ope
 
 - [Featured](#featured)
 - [Recently Added](#recently-added)
+- [ox402-utils](https://treating-arcade-overall-enough.trycloudflare.com) - 88 paid tools for AI agents via x402 (USDC on Base) with MCP server at `/mcp402/`. AI image gen, rewrite/translate, resume parser, PDF tools, research, security, media, speech (Kokoro TTS). Free tier: 5 calls/IP.
 - [Reference Servers](#reference-servers)
 - [Official Servers](#official-servers)
   - [Database & Data](#database--data)
