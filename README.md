@@ -326,6 +326,7 @@ Official integrations are maintained by companies building production ready MCP 
 - **[Pearl](https://mcp.pearl.com)** - Official MCP Server to interact with Pearl API. Connect your AI Agents with 12,000+ certified experts instantly.
 - **[Pearch](https://github.com/Pearch-ai/mcp_pearch)** - Best people search engine that reduces the time spent on talent discovery.
 - **[Plane](https://github.com/makeplane/plane-mcp-server)** - The official Plane MCP server provides integration with Plane APIs, enabling full AI automation of Plane projects, work items, cycles and more.
+- **[Process Street](https://github.com/process-street/process-street-mcp)** - Connect AI agents to Process Street workflows, tasks, runs, data sets, and operational records. [Website](https://www.process.st/help/docs/mcp-server/)
 - **[Rember](https://github.com/rember/rember-mcp)** - Create spaced repetition flashcards in [Rember](https://rember.com) to remember anything you learn in your chats
 - **[Routine](https://github.com/routineco/mcp-server)** - MCP server to interact with [Routine](https://routine.co/): calendars, tasks, notes, etc.
 - **[Rube](https://rube.composio.dev)** - Rube is a Model Context Protocol (MCP) server that connects your AI tools to 500+ apps like Gmail, Slack, GitHub, and Notion. Simply install it in your AI client, authenticate once with your apps, and start asking your AI to perform real actions like "Send an email" or "Create a task."
