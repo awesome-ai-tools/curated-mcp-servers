@@ -228,6 +228,7 @@ Official integrations are maintained by companies building production ready MCP 
 - **[FlyonUI](https://github.com/themeselection/flyonui-mcp)** - Build modern, production-ready UI blocks, components, and landing pages in minutes.
 - **[Gluestack UI MCP Server](https://github.com/gauravsaini/gluestack-ui-mcp-server)** - An MCP server tailored for React Native–first development using Gluestack UI.
 - **[Kontent.ai](https://github.com/kontent-ai/mcp-server)** - Create, manage, and explore your content and content model using natural language in any MCP-compatible AI tool.
+- **[Magic Hour](https://github.com/magichourhq/magic-hour-mcp)** - Generate and edit video, images, and audio through Magic Hour's hosted MCP server. [Website](https://magichour.ai/mcp)
 - **[Mureka](https://github.com/SkyworkAI/Mureka-mcp)** - generate lyrics, song and background music(instrumental)
 - **[Mux](https://github.com/muxinc/mux-node-sdk/tree/master/packages/mcp-server)** - [Mux](https://www.mux.com) is a video API for developers. With Mux's official MCP you can upload videos, create live streams, generate thumbnails, add captions, manage playback policies, dig through engagement data, monitor video performance, and more.
 - **[SlideSpeak](https://github.com/SlideSpeak/slidespeak-mcp)** - Create presentations and PowerPoints using AI and SlideSpeak MCP
