@@ -539,6 +539,7 @@ A growing set of community-developed and maintained servers demonstrates various
 
 ### Social Media & Communication
 
+- **[BulkPublish](https://github.com/azeemkafridi/bulkpublish-api)** - Approval-based multi-channel social publishing API and hosted MCP for AI agents. [Website](https://app.bulkpublish.com/docs)
 - **[Bluesky](https://github.com/keturiosakys/bluesky-context-server)** - integrates with Bluesky API to query and search feeds and posts.
 - **[Email](https://github.com/Shy2593666979/mcp-server-email)** - This server enables users to send emails through various email providers, including Gmail, Outlook, Yahoo, Sina, Sohu, 126, 163, and QQ Mail. It also supports attaching files from specified directories, making it easy to upload attachments along with the email content.
 - **[Email Send MCP](https://github.com/YUHAI0/email-send-mcp)** - A fixed one from above one. More user-friendly.
