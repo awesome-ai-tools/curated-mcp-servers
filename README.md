@@ -618,6 +618,7 @@ A growing set of community-developed and maintained servers demonstrates various
 
 ### Security & Compliance
 
+- **[AffixIO](https://github.com/AffixIO/affixio-mcp)** – Local stdio ACTION attestation MCP (`npx -y @affixio/mcp`). Tools: `attest_action`, `verify_action`, `gate_tool_call`. PII stays on the host; not KYC.
 - **[BloodHound-MCP](https://github.com/MorDavid/BloodHound-MCP-AI)** (by MorDavid) - integration that connects BloodHound with AI through MCP, allowing security professionals to analyze Active Directory attack paths using natural language queries instead of Cypher.
 - **[irulescan MCP](https://github.com/simonkowallik/irulescan?tab=readme-ov-file#mcp-server)** - :shield: MCP enabled code security analyzer for F5 iRules
 - **[Keycloak MCP Server](https://github.com/sshaaf/keycloak-mcp-server)** - designed to work with Keycloak for identity and access management, with about 40+ tools covering, Users, Realms, Clients, Roles, Groups, IDPs, Authentication. Native builds available.
