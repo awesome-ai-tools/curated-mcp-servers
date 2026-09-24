@@ -341,6 +341,7 @@ Official integrations are maintained by companies building production ready MCP 
 
 - **[BrowserStack](https://github.com/browserstack/mcp-server)** – Bring the full power of BrowserStack's [Test Platform](https://www.browserstack.com/test-platform) to your AI tools, making testing faster and easier for every developer and tester on your team.
 - **[Cycode](https://github.com/cycodehq/cycode-cli#mcp-command-experiment)** - Boost security in your dev lifecycle via SAST, SCA, Secrets & IaC scanning with [Cycode](https://cycode.com/).
+- **[Movahedi Privacy API](https://github.com/movahedi-ca/movahedi-ca)** - Free, anonymous remote MCP server for Canadian privacy compliance: 5 tools covering enforcement cases, a privacy glossary, and Quebec Law 25 requirements. [Website](https://movahedi.ca/mcp)
 - **[RAD Security](https://github.com/rad-security/mcp-server)** - Interact with the RAD Security platform which provides AI-powered security insights for Kubernetes and cloud environments.
 - **[Semgrep](https://github.com/semgrep/mcp)** - Enable AI agents to secure code with [Semgrep](https://semgrep.dev/).
 - **[urlDNA](https://github.com/urldna/mcp)** - Dynamically scan and analyze potentially malicious URLs using the [urlDNA](https://urlDNA.io)
