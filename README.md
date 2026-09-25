@@ -166,6 +166,7 @@ Official integrations are maintained by companies building production ready MCP 
 
 - **[AgentRPC](https://github.com/agentrpc/agentrpc)** - Connect to any function, any language, across network boundaries using [AgentRPC](https://www.agentrpc.com/).
 - **[AlibabaCloud DevOps MCP](https://github.com/aliyun/alibabacloud-devops-mcp-server)** - Yunxiao MCP Server provides AI assistants with the ability to interact with the [Yunxiao platform](https://devops.aliyun.com).
+- **[API.market MCP Gateway](https://github.com/Noveum/api-market-agent-integrations)** - Public integration metadata for a proprietary [hosted gateway](https://api.market/api/mcp/gateway) to discover and call APIs, inspect schemas and check usage with OAuth or API-key authentication and API-specific free tiers and paid plans. [Website](https://api.market/mcp)
 - **[APIMatic MCP](https://github.com/apimatic/apimatic-validator-mcp)** - APIMatic MCP Server is used to validate OpenAPI specifications using [APIMatic](https://www.apimatic.io/). The server processes OpenAPI files and returns validation summaries by leveraging APIMatic's API.
 - **[Augments](https://augments.dev/)** - Comprehensive framework documentation and code examples for popular development tools and libraries.
 - **[AWS CDK](https://github.com/awslabs/mcp/tree/main/src/cdk-mcp-server)** - Get prescriptive CDK advice, explain CDK Nag rules, check suppressions, generate Bedrock Agent schemas, and discover AWS Solutions Constructs patterns.
