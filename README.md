@@ -727,3 +727,8 @@ Want to add your MCP server? Check out our [Contributing Guide](CONTRIBUTING.md)
 <p align="center">
   <sub>If you find this list useful, please give it a ⭐ to help others discover it!</sub>
 </p>
+
+
+## Security & Validation
+
+- [mcpdoctor](https://github.com/xka0085-byte/mcp-doctor) — Read-only MCP tool-schema checker and x402 HTTP 402 endpoint inspector with GitHub Action CI. [Docs](https://xka0085-byte.github.io/mcp-doctor/)
