@@ -403,6 +403,7 @@ A growing set of community-developed and maintained servers demonstrates various
 - **[gx-mcp-server](https://github.com/davidf9999/gx-mcp-server)** - Expose Great Expectations data validation and
   quality checks as MCP tools for AI agents. Load datasets, create validation suites, run data quality checks, and
   retrieve detailed results.
+- **[Invokely MCP connector](https://github.com/estevecastells/invokely-mcp-connector)** - MIT-licensed local stdio adapter for querying official statistics through Invokely's hosted MCP service; the hosted backend source is not included.
 - **[JSON MCP](https://github.com/VadimNastoyashchy/json-mcp)** - MCP server empowers LLMs to interact with JSON files efficiently. With JSON MCP, you can split, merge, etc.
 - **[libSQL by xexr](https://github.com/Xexr/mcp-libsql)** - MCP server for libSQL databases with comprehensive security and management tools. Supports file, local HTTP, and remote Turso databases with connection pooling, transaction support, and 6 specialized database tools.
 - **[Mongo](https://github.com/QuantGeekDev/mongo-mcp)** - A Model Context Protocol (MCP) server that enables LLMs to interact directly with MongoDB databases
