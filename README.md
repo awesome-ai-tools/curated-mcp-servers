@@ -526,6 +526,7 @@ A growing set of community-developed and maintained servers demonstrates various
 
 ### Finance & Payments
 
+- **[Agent Payment Node](https://github.com/nuanu-ai/agent-payment-node)** - Local macOS CLI and stdio MCP payments with foreground owner approval for signing.
 - **[Algorand](https://github.com/GoPlausible/algorand-mcp)** - A comprehensive MCP server for tooling interactions(40+) and resource accessibility(60+) plus many useful prompts to interact with Algorand Blockchain.
 - **[CoinCap](https://github.com/QuantGeekDev/coincap-mcp)** - A MCP server that provides real-time cryptocurrency market data through CoinCap's public API without requiring authentication
 - **[Facebook Ads](https://github.com/gomarble-ai/facebook-ads-mcp-server)** - MCP server acting as an interface to the Facebook Ads, enabling programmatic access to Facebook Ads data and management features.
