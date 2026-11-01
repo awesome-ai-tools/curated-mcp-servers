@@ -630,6 +630,7 @@ A growing set of community-developed and maintained servers demonstrates various
 - **[Alertmanager](https://github.com/ntk148v/alertmanager-mcp-server)** - A Model Context Protocol (MCP) server that enables AI assistants to integrate with Prometheus Alertmanager
 - **[Comet Opik](https://github.com/comet-ml/opik-mcp)** - MCP server to talk to your [Opik](https://github.com/comet-ml/opik) cloud or open-source instance to query and analyze LLM traces, metrics and observability.
 - **[Fathom Analytics](https://github.com/mackenly/mcp-fathom-analytics)** - Access and analyze Fathom Analytics data and reports
+- **[Kilobat CLI](https://github.com/seifip/kilobat-cli)** - GPL-3.0-only macOS 14+ CLI exposing local network diagnostics and per-app traffic to agents over stdio MCP.
 - **[Rootly-AI-Labs/Rootly-MCP-server](https://github.com/Rootly-AI-Labs/Rootly-MCP-server)** - MCP server for the incident management platform [Rootly](https://rootly.com/).
 
 ### Other
