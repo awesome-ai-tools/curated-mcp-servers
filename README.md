@@ -290,6 +290,7 @@ Official integrations are maintained by companies building production ready MCP 
 - **[Exa](https://github.com/exa-labs/exa-mcp-server)** - Search Engine made for AIs by [Exa](https://exa.ai)
 - **[FetchSERP](https://github.com/fetchSERP/fetchserp-mcp-server-node)** - All-in-One SEO & Web Intelligence Toolkit API [FetchSERP](https://www.fetchserp.com)
 - **[Firecrawl](https://github.com/mendableai/firecrawl-mcp-server)** - Extract web data with [Firecrawl](https://firecrawl.dev)
+- **[FlashData](https://github.com/rocosen/flashdata-mcp)** - Google and YouTube search, metadata, transcripts and downloads through MCP using an API key and paid credits. [Website](https://flashdata.dev/mcp)
 - **[Hyperbrowser](https://github.com/hyperbrowserai/mcp)** - [Hyperbrowser](https://www.hyperbrowser.ai/) is the next-generation platform empowering AI agents and enabling effortless, scalable browser automation.
 - **[Kagi Search](https://github.com/kagisearch/kagimcp)** - Search the web using Kagi's search API
 - **[Notte](https://github.com/nottelabs/notte/tree/main/packages/notte-mcp)** - Leverage Notte Web AI agents & cloud browser sessions for scalable browser automation & scraping workflows
