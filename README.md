@@ -281,6 +281,7 @@ Official integrations are maintained by companies building production ready MCP 
 ### Search & Web
 
 - **[AgentQL](https://github.com/tinyfish-io/agentql-mcp)** - Enable AI agents to get structured data from unstructured web with [AgentQL](https://www.agentql.com/).
+- **[AIHOT](https://github.com/KKKKhazix/AIHOT)** - Search Chinese AI industry news, track topics and read daily briefings through a public read-only MCP server. [Website](https://aihot.news/agent?tab=mcp)
 - **[AnyCrawl](https://github.com/any4ai/anycrawl-mcp-server)** - [AnyCrawl](https://anycrawl.dev) MCP Server, Powerful web scraping and crawling for Cursor, Claude, and other LLM clients via the Model Context Protocol (MCP).
 - **[Apify](https://github.com/apify/actors-mcp-server)** - [Actors MCP Server](https://apify.com/apify/actors-mcp-server): Use 3,000+ pre-built cloud tools to extract data from websites, e-commerce, social media, search engines, maps, and more
 - **[Bright Data](https://github.com/brightdata/brightdata-mcp)** - Discover, extract, and interact with the web - one interface powering automated access across the public internet.
