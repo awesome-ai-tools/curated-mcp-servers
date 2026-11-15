@@ -570,6 +570,7 @@ A growing set of community-developed and maintained servers demonstrates various
 - **[Kagi](https://github.com/ac3xx/mcp-servers-kagi)** - Kagi search API integration
 - **[MCP-SearXNG-Enhanced Web Search](https://github.com/OvertliDS/mcp-searxng-enhanced)** - An enhanced MCP server for SearXNG web searching, utilizing a category-aware web-search, web-scraping, and includes a date/time retrieval tool.
 - **[Nexus](https://github.com/adawalli/nexus)** - Web search server that integrates Perplexity Sonar models via OpenRouter API for real-time, context-aware search with citations
+- **[No Stairs Please](https://nostairsplease.com/mcp)** - Remote MCP server for searching verified live music venues, stage specs, and booking contacts across all 50 US states ([nostairsplease.com](https://nostairsplease.com/)).
 - **[Perplexity](https://github.com/tanigami/mcp-server-perplexity)** - Interacting with Perplexity
 - **[ScrapeGraphAI](https://github.com/ScrapeGraphAI/Scrapegraph-ai)** - AI-powered web scraping library that creates scraping pipelines using natural language.- [ScrapeGraphAI](https://scrapegraphai.com)
 - **[Search1API](https://github.com/fatwang2/search1api-mcp)** - Search and crawl in one API
