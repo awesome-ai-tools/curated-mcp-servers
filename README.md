@@ -257,6 +257,7 @@ Official integrations are maintained by companies building production ready MCP 
 - **[Ramp](https://github.com/ramp-public/ramp-mcp)** - Interact with [Ramp](https://ramp.com)'s Developer API to run analysis on your spend and gain insights leveraging LLMs
 - **[RevenueCat](https://www.revenuecat.com/docs/tools/mcp/overview)** - Manage your In-app-purchases in [RevenueCat](https://www.revenuecat.com) without leaving your AI coding environment.
 - **[Square](https://github.com/square/square-mcp-server)** - A Model Context Protocol (MCP) server for square
+- **[StalkChain Data](https://github.com/StalkChain/fomo-mcp-api)** - Hosted OAuth MCP server for Solana wallet activity, token holders, tracked-trader flows and Hyperliquid market data. [Website](https://stalkchain.com/mcp)
 - **[Stripe](https://github.com/stripe/agent-toolkit)** - Interact with Stripe API
 - **[Thirdweb](https://github.com/thirdweb-dev/ai/tree/main/python/thirdweb-mcp)** - Read/write to over 2k blockchains, enabling data querying, contract analysis/deployment, and transaction execution, powered by [Thirdweb](https://thirdweb.com/)
 - **[Token Metrics](https://github.com/token-metrics/mcp)** - [Token Metrics](https://www.tokenmetrics.com/) integration for fetching real-time crypto market data, trading signals, price predictions, and advanced analytics.
