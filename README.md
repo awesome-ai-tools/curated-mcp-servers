@@ -300,6 +300,7 @@ Official integrations are maintained by companies building production ready MCP 
 - **[ScreenshotMCP](https://github.com/upnorthmedia/ScreenshotMCP/)** - Capture website screenshots including full page, elements, and device specific sizes.
 - **[ScreenshotOne](https://github.com/screenshotone/mcp/)** - Render website screenshots with [ScreenshotOne](https://screenshotone.com/)
 - **[Search1API](https://github.com/fatwang2/search1api-mcp)** - One API for Search, Crawling, and Sitemaps
+- [Skool Community Scraper](https://github.com/GeminiGeorge22/publicrecords-mcp/tree/main/servers/skool-community-mcp) - Search Skool communities by keyword. Members, price, rating and estimated monthly revenue for each, plus daily growth tracking.
 - **[Tavily](https://github.com/tavily-ai/tavily-mcp)** - Search engine for AI agents (search + extract) powered by [Tavily](https://tavily.com/)
 - **[VpunaAiSearch](https://github.com/vpuna/vpuna-ai-search)** - Connect to [Vpuna AI Search Service](https://aisearch.vpuna.com), a developer first platform for semantic search, summarization, and contextual chat. Each project dynamically exposes its own Remote HTTP MCP server, enabling real-time context injection from structured and unstructured data.
 - **[WebDataSource](https://webdatasource.com/releases/latest/mcp/index.html)** - Web Crawler for AI Agents. Supercharge your AI agents with an MCP-ready web crawler that delivers real-time insights from the web and your private knowledge bases.
