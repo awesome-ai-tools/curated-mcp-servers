@@ -233,6 +233,7 @@ Official integrations are maintained by companies building production ready MCP 
 - **[SlideSpeak](https://github.com/SlideSpeak/slidespeak-mcp)** - Create presentations and PowerPoints using AI and SlideSpeak MCP
 - **[Ssemble AI Clipping](https://www.npmjs.com/package/@ssemble/mcp-server)** - Create AI-powered short-form video clips from YouTube videos. 9 tools for creating shorts, browsing caption templates, background music, gameplay overlays, and meme hooks. Supports both local (npx) and hosted endpoint (mcp.ssemble.com). [Website](https://www.ssemble.com)
 - **[Supadata](https://github.com/supadata-ai/mcp)** - Official MCP server for [Supadata](https://supadata.ai) - YouTube, TikTok, X and Web data for makers.
+- **[Vertov](https://github.com/ankurmans/vertov-screen-recorder/tree/main/plugins/claude/vertov)** - A hosted MCP server that searches screen recordings, reads transcripts and briefs, and uploads recordings for share links using Streamable HTTP with OAuth. [Website](https://vertov.app/docs/mcp)
 - **[VideoDB](https://github.com/video-db/agent-toolkit/tree/main/modelcontextprotocol)** - Server for advanced AI-driven video editing, semantic search, multilingual transcription, generative media, voice cloning, and content moderation.
 - **[Webflow](https://github.com/webflow/mcp-server)** - Interact with Webflow APIs to list and edit your site and CMS data.
 
