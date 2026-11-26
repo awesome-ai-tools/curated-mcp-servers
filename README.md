@@ -317,6 +317,7 @@ Official integrations are maintained by companies building production ready MCP 
 - **[EduBase](https://github.com/EduBase/MCP)** - Interact with [EduBase](https://www.edubase.net), a comprehensive e-learning platform with advanced quizzing, exam management, and content organization capabilities
 - **[eSignatures](https://github.com/esignaturescom/mcp-server-esignatures)** - Contract and template management for drafting, reviewing, and sending binding contracts.
 - **[Fibery](https://github.com/Fibery-inc/fibery-mcp-server)** - Perform queries and entity operations in your [Fibery](https://fibery.io) workspace.
+- **[Frank AI Researcher](https://github.com/nar-vardanyan/frank-mcp)** - Frank is an AI user researcher that runs short voice interviews. [Website](https://www.hifrank.ai)
 - **[gotoHuman](https://github.com/gotohuman/gotohuman-mcp-server)** - Human-in-the-loop platform - Allow AI agents and automations to send requests for approval to your [gotoHuman](https://www.gotohuman.com) inbox.
 - **[Integration App](https://github.com/integration-app/mcp-server)** - Interact with any other SaaS applications on behalf of your customers.
 - **[Knit MCP](https://developers.getknit.dev/docs/knit-mcp-server-getting-started)** - Connect with 10,000+ tools across HRIS, ATS, CRM, Accounting, Calendar, Meeting, Ticketing, and more categories.
